@@ -63,3 +63,32 @@ main {
 a.button-cyan, a.button-purple {
     text-decoration: none;
 }
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+}
+
+.hero-heading {
+    font-size: 64px;
+    line-height: 1.1;
+    font-weight: bold;
+    color: var(--slate-900);
+}
+
+.hero-text {
+    color: var(--slate-600);
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 1.5;
+}
+
+.hero-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
