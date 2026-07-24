@@ -1,0 +1,29 @@
+:root {
+    --cyan-600: #4D96A9;
+    --cyan-300: #8FE3F9;
+    --purple-600: #855FB1;
+    --purple-300: #D9B8FF;
+    --slate-900: #28283D;
+    --slate-600: #87879D;
+    --slate-300: #D1D1DF;
+    --white: #FAFAFA;
+}
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: inherit;
+}
+
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+
+input, button, textarea, select {
+    font: inherit;
+}
