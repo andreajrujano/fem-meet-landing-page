@@ -37,3 +37,29 @@ body {
 main {
     flex-grow: 1;
 }
+
+.button-purple {
+    background-color: var(--purple-600);
+    padding: 16px 40px;
+    color: var(--white);
+    border-radius: 29px;
+}
+
+.button-purple span {
+    color:var(--purple-300)
+}
+
+.button-cyan {
+    background-color: var(--cyan-600);
+    padding: 16px 40px;
+    color: var(--white);
+    border-radius: 29px;
+}
+
+.button-cyan span {
+    color:var(--cyan-300);
+}
+
+a.button-cyan, a.button-purple {
+    text-decoration: none;
+}
