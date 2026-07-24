@@ -27,3 +27,13 @@ img, picture, video, canvas, svg {
 input, button, textarea, select {
     font: inherit;
 }
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex-grow: 1;
+}
