@@ -125,7 +125,7 @@ header {
 }
 
 .features {
-    padding: 56px 80px 72px;
+    padding: 32px 32px 64px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -134,9 +134,15 @@ header {
 
 .features-images {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 16px;
     list-style-type: none;
+}
+
+.features-images img {
+    height: 144px;
+    border-radius: 8px;
+    object-fit: cover;
 }
 
 .features-overline {
