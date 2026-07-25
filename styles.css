@@ -95,12 +95,27 @@ header {
 }
 
 .hero {
+    padding-top: 64px;
+}
+
+.hero::before {
+    display: block;
+    height: 160px;
+    content: "";
+    background-image: url("/assets/tablet/image-hero.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.hero-content {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 24px;
-    padding: 64px 32px 32px;
+    padding: 48px 32px 32px;
+    text-align: center;
 }
 
 .hero-header {
