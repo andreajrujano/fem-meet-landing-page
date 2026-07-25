@@ -33,6 +33,7 @@ body {
     display: flex;
     flex-direction: column;
     font-family: "Red Hat Display", sans-serif;
+    overflow-x: hidden;
 }
 
 main {
@@ -97,10 +98,11 @@ header {
 
 .hero {
     padding-top: 64px;
+    display: flex;
+    flex-direction: column;
 }
 
 .hero::before {
-    display: block;
     height: 160px;
     content: "";
     background-image: url("/assets/tablet/image-hero.png");
@@ -167,6 +169,7 @@ header {
     letter-spacing: 4px;
     font-weight: 900;
     color: var(--cyan-600);
+    text-transform: uppercase;
 }
 
 .features-description {
@@ -174,6 +177,7 @@ header {
     flex-direction: column;
     align-items: center;
     gap: 32px;
+    text-align: center;
 }
 
 .features-header {
@@ -194,6 +198,7 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
 }
 
 footer .section-number {
@@ -202,6 +207,7 @@ footer .section-number {
 }
 
 .footer-content {
+    width: 100%;
     padding: 64px 32px;
     display: flex;
     flex-direction: column;
@@ -232,4 +238,84 @@ footer .section-number {
 
 .footer .button-purple {
     display: inline-block
+}
+
+@media screen and (min-width: 1024px) {
+    .hero {
+        flex-direction: row;
+        gap: 32px;
+        padding: 64px 0;
+    }
+    .hero-content {
+        max-width: 450px;
+        padding: 0;
+    }
+    .hero-header {
+        font-size: 64px;
+    }
+    .hero::before {
+        flex: 1;
+        height: 360px;
+        /*background-size: 394px 303px;*/
+        background-image: url("/assets/desktop/image-hero-left.png");
+        background-position: right top;
+        /*transform: translateX(-86px);*/
+    }
+    .hero::after {
+        flex: 1;
+        height: 360px;
+        content: "";
+        background-image: url("/assets/desktop/image-hero-right.png");
+        background-position: left bottom;
+        /*background-size: 394px 303px;*/
+        background-repeat: no-repeat;
+    }
+
+    .hero-buttons {
+        flex-direction: row;
+    }
+
+    .features-images {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .features-images img {
+        height: 256px;
+    }
+
+    .features-description {
+        max-width: 544px;
+    }
+
+    .features-overline {
+        font-size: 16px;
+    }
+    .features-header {
+        font-size: 40px;
+    }
+    .features-text {
+        font-size: 18px;
+    }
+
+    .footer-content {
+        flex-direction: row;
+        gap: 64px;
+        align-items: center;
+        justify-content: center;
+        background-image: linear-gradient(rgb(77 150 168 / 0.9), rgb(77 150 168  / 0.9)),
+        url("/assets/desktop/image-footer.jpg");
+    }
+
+    .footer-header {
+        text-align: left;
+        font-size: 40px;
+        max-width: 355px;
+    }
+
+    .footer-text {
+        max-width: 355px;
+        font-size: 18px;
+        text-align: left;
+    }
+
 }
