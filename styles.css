@@ -97,3 +97,47 @@ header {
     align-items: center;
     gap: 16px;
 }
+
+.features {
+    padding: 56px 80px 72px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap : 64px;
+}
+
+.features-images {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+    list-style-type: none;
+}
+
+.features-overline {
+    font-size: 12px;
+    line-height: 1.1;
+    letter-spacing: 4px;
+    font-weight: 900;
+    color: var(--cyan-600);
+}
+
+.features-description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+}
+
+.features-header {
+    font-size: 32px;
+    font-weight: 900;
+    line-height: 1.1;
+    color: var(--slate-900);
+}
+
+.features-text {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    color: var(--slate-600);
+}
