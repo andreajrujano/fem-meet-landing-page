@@ -105,7 +105,7 @@ header {
 .hero::before {
     height: 160px;
     content: "";
-    background-image: url("/assets/tablet/image-hero.png");
+    background-image: url("./assets/tablet/image-hero.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -216,7 +216,7 @@ footer .section-number {
     text-align: center;
     background-image:
             linear-gradient(rgb(77 150 168 / 0.9), rgb(77 150 168  / 0.9)),
-            url("/assets/mobile/image-footer.jpg");
+            url("./assets/mobile/image-footer.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -257,7 +257,7 @@ footer .section-number {
         flex: 1;
         height: 360px;
         /*background-size: 394px 303px;*/
-        background-image: url("/assets/desktop/image-hero-left.png");
+        background-image: url("./assets/desktop/image-hero-left.png");
         background-position: right top;
         /*transform: translateX(-86px);*/
     }
@@ -265,7 +265,7 @@ footer .section-number {
         flex: 1;
         height: 360px;
         content: "";
-        background-image: url("/assets/desktop/image-hero-right.png");
+        background-image: url("./assets/desktop/image-hero-right.png");
         background-position: left bottom;
         /*background-size: 394px 303px;*/
         background-repeat: no-repeat;
@@ -303,7 +303,7 @@ footer .section-number {
         align-items: center;
         justify-content: center;
         background-image: linear-gradient(rgb(77 150 168 / 0.9), rgb(77 150 168  / 0.9)),
-        url("/assets/desktop/image-footer.jpg");
+        url("./assets/desktop/image-footer.jpg");
     }
 
     .footer-header {
