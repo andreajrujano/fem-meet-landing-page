@@ -224,7 +224,7 @@ footer .section-number {
     background-size: cover;
     background-repeat: no-repeat;
     color: var(--white);
-    gap: 64px;
+    gap: 48px;
 }
 
 .footer-header {
