@@ -262,10 +262,10 @@ footer .section-number {
     .hero::before {
         flex: 1;
         height: 360px;
-        /*background-size: 394px 303px;*/
+        background-size: 394px 303px;
         background-image: url("./assets/desktop/image-hero-left.png");
         background-position: right top;
-        /*transform: translateX(-86px);*/
+        transform: translateX(-86px);
     }
     .hero::after {
         flex: 1;
@@ -273,8 +273,9 @@ footer .section-number {
         content: "";
         background-image: url("./assets/desktop/image-hero-right.png");
         background-position: left bottom;
-        /*background-size: 394px 303px;*/
         background-repeat: no-repeat;
+        background-size: 394px 303px;
+        transform: translateX(86px);
     }
 
     .hero-buttons {
