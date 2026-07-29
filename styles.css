@@ -42,7 +42,7 @@ main {
 
 .button-purple {
     background-color: var(--purple-600);
-    padding: 16px 40px;
+    padding: 1rem 2.5rem;
     color: var(--white);
     border-radius: 29px;
 }
@@ -53,7 +53,7 @@ main {
 
 .button-cyan {
     background-color: var(--cyan-600);
-    padding: 16px 40px;
+    padding: 1rem 2.5rem;
     color: var(--white);
     border-radius: 29px;
 }
@@ -77,12 +77,12 @@ a.button-cyan, a.button-purple {
     content: "";
     background-color: var(--slate-300);
     width: 1px;
-    height: 80px;
+    height: 5rem;
 }
 
 .section-number > span {
-    width: 56px;
-    height: 56px;
+    width: 3.5rem;
+    height: 3.5rem;
     border: 1px solid var(--slate-300);
     background-color: var(--white);
     border-radius: 50%;
@@ -96,11 +96,11 @@ header {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding-top: 48px;
+    padding-top: 3rem;
 }
 
 .hero {
-    padding-top: 64px;
+    padding-top: 4rem;
     display: flex;
     flex-direction: column;
 }
@@ -119,13 +119,13 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 24px;
-    padding: 48px 32px 32px;
+    gap: 1.5rem;
+    padding: 3rem 2rem 2rem;
     text-align: center;
 }
 
 .hero-header {
-    font-size: 40px;
+    font-size: 2.5rem;
     line-height: 1.1;
     font-weight: 900;
     color: var(--slate-900);
@@ -133,7 +133,7 @@ header {
 
 .hero-text {
     color: var(--slate-600);
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 500;
     line-height: 1.5;
 }
@@ -142,34 +142,34 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 16px;
+    gap: 1rem;
 }
 
 .features {
-    padding: 32px 32px 64px;
+    padding: 2rem 2rem 4rem;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap : 64px;
+    gap : 4rem;
 }
 
 .features-images {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 16px;
+    gap: 1rem;
     list-style-type: none;
 }
 
 .features-images img {
     height: 144px;
-    border-radius: 8px;
+    border-radius: 0.5rem;
     object-fit: cover;
 }
 
 .features-overline {
-    font-size: 12px;
+    font-size: 0.75rem;
     line-height: 1.1;
-    letter-spacing: 4px;
+    letter-spacing: 0.33em;
     font-weight: 900;
     color: var(--cyan-600);
     text-transform: uppercase;
@@ -179,19 +179,19 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 32px;
+    gap: 2rem;
     text-align: center;
 }
 
 .features-header {
-    font-size: 32px;
+    font-size: 2rem;
     font-weight: 900;
     line-height: 1.1;
     color: var(--slate-900);
 }
 
 .features-text {
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 500;
     line-height: 1.5;
     color: var(--slate-600);
@@ -205,13 +205,13 @@ footer {
 }
 
 footer .section-number {
-    margin: 0 0 -28px 0;
+    margin: 0 0 -1.75rem 0;
     z-index: 2;
 }
 
 .footer-content {
     width: 100%;
-    padding: 64px 32px;
+    padding: 4rem 2rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -224,17 +224,17 @@ footer .section-number {
     background-size: cover;
     background-repeat: no-repeat;
     color: var(--white);
-    gap: 48px;
+    gap: 3rem;
 }
 
 .footer-header {
-    font-size: 32px;
+    font-size: 2rem;
     font-weight: 900;
     line-height: 1.1;
 }
 
 .footer-text {
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 500;
     line-height: 1.5;
 }
@@ -255,7 +255,7 @@ footer .section-number {
 
     .features-images {
         grid-template-columns: repeat(4, 1fr);
-        gap: 24px;
+        gap: 1.5rem;
     }
     .footer-content {
         background-image:
@@ -266,19 +266,19 @@ footer .section-number {
 
 @media screen and (min-width: 1024px) {
     header {
-        padding-top: 80px;
+        padding-top: 5rem;
     }
     .hero {
         flex-direction: row;
-        gap: 32px;
-        padding: 64px 0;
+        gap: 2rem;
+        padding: 4rem 0;
     }
     .hero-content {
         max-width: 450px;
         padding: 0;
     }
     .hero-header {
-        font-size: 64px;
+        font-size: 4rem;
     }
     .hero::before {
         flex: 1;
@@ -316,18 +316,18 @@ footer .section-number {
     }
 
     .features-overline {
-        font-size: 16px;
+        font-size: 1rem;
     }
     .features-header {
-        font-size: 40px;
+        font-size: 2.5rem;
     }
     .features-text {
-        font-size: 18px;
+        font-size: 1.125rem;
     }
 
     .footer-content {
         flex-direction: row;
-        gap: 64px;
+        gap: 4rem;
         align-items: center;
         justify-content: center;
         background-image: linear-gradient(rgb(77 150 168 / 0.9), rgb(77 150 168  / 0.9)),
@@ -336,13 +336,13 @@ footer .section-number {
 
     .footer-header {
         text-align: left;
-        font-size: 40px;
+        font-size: 2.5rem;
         max-width: 355px;
     }
 
     .footer-text {
         max-width: 355px;
-        font-size: 18px;
+        font-size: 1.125rem;
         text-align: left;
     }
 
