@@ -44,7 +44,7 @@ main {
     background-color: var(--purple-600);
     padding: 1rem 2.5rem;
     color: var(--white);
-    border-radius: 29px;
+    border-radius: 999px;
 }
 
 .button-purple span {
@@ -55,7 +55,7 @@ main {
     background-color: var(--cyan-600);
     padding: 1rem 2.5rem;
     color: var(--white);
-    border-radius: 29px;
+    border-radius: 999px;
 }
 
 .button-cyan span {
