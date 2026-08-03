@@ -40,22 +40,22 @@ main {
     flex-grow: 1;
 }
 
-.button-purple {
-    background-color: var(--purple-600);
+.button {
     padding: 1rem 2.5rem;
     color: var(--white);
     border-radius: 999px;
 }
 
+.button-purple {
+    background-color: var(--purple-600);
+}
+
 .button-purple span {
-    color:var(--purple-300)
+    color:var(--purple-300);
 }
 
 .button-cyan {
     background-color: var(--cyan-600);
-    padding: 1rem 2.5rem;
-    color: var(--white);
-    border-radius: 999px;
 }
 
 .button-cyan span {
