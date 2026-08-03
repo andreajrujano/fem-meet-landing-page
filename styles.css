@@ -106,7 +106,7 @@ header {
 }
 
 .hero::before {
-    height: 160px;
+    height: clamp(160px, 23.55px + 36.39vw, 303px);
     content: "";
     background-image: url("./assets/tablet/image-hero.png");
     background-repeat: no-repeat;
@@ -245,10 +245,6 @@ footer .section-number {
 
 
 @media screen and (min-width: 768px) {
-    .hero::before {
-        height: 303px;
-    }
-
     .hero-buttons {
         flex-direction: row;
     }
