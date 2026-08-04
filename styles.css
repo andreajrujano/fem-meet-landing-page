@@ -346,6 +346,7 @@ footer .section-number {
     .footer-content {
         flex-direction: row;
         gap: 4rem;
+        padding: 7rem 5rem;
         align-items: center;
         justify-content: center;
         background-image: linear-gradient(rgb(77 150 168 / 0.9), rgb(77 150 168  / 0.9)),
