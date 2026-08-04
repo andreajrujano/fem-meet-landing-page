@@ -140,7 +140,7 @@ header {
     gap: 1.5rem;
     padding: 3rem 2rem 2rem;
     text-align: center;
-    max-width: min(100vw, 28rem);
+    max-width: min(100%, 28rem);
     align-self: center;
 }
 
@@ -182,7 +182,6 @@ header {
 
 .features-images img {
     height: clamp(144px, 128.73px + 4.07vw, 160px);
-    aspect-ratio: 1 / 1;
     border-radius: 0.5rem;
     object-fit: cover;
 }
