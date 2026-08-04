@@ -50,6 +50,15 @@ main {
     background-color: var(--purple-600);
 }
 
+.button-purple:hover {
+    background-color: #B18BDD;
+}
+
+a.button-purple:focus-visible {
+    outline: 3px solid var(--purple-300);
+    outline-offset: 2px;
+}
+
 .button-purple span {
     color:var(--purple-300);
 }
@@ -58,8 +67,17 @@ main {
     background-color: var(--cyan-600);
 }
 
+.button-cyan:hover {
+    background-color: #71C0D4;
+}
+
 .button-cyan span {
     color:var(--cyan-300);
+}
+
+a.button-cyan:focus-visible {
+    outline: 3px solid var(--cyan-300);
+    outline-offset: 2px;
 }
 
 a.button-cyan, a.button-purple {
