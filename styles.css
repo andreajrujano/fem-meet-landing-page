@@ -140,6 +140,8 @@ header {
     gap: 1.5rem;
     padding: 3rem 2rem 2rem;
     text-align: center;
+    max-width: min(100vw, 28rem);
+    align-self: center;
 }
 
 .hero-header {
@@ -200,6 +202,7 @@ header {
     align-items: center;
     gap: 2rem;
     text-align: center;
+    max-width: min(100%, 34rem);
 }
 
 .features-header {
@@ -282,6 +285,10 @@ footer .section-number {
                 linear-gradient(rgb(77 150 168 / 0.9), rgb(77 150 168  / 0.9)),
                 url("./assets/tablet/image-footer.jpg");
     }
+
+    .footer-header, .footer-text {
+        width: clamp(22.188rem, 42.143rem - 22.173vw, 31.5rem);
+    }
 }
 
 @media screen and (min-width: 1024px) {
@@ -294,7 +301,6 @@ footer .section-number {
         padding: 4rem 0;
     }
     .hero-content {
-        max-width: 450px;
         padding: 0;
     }
     .hero-header {
@@ -327,10 +333,6 @@ footer .section-number {
         grid-template-columns: repeat(4, 1fr);
     }
 
-    .features-description {
-        max-width: 544px;
-    }
-
     .features-overline {
         font-size: 1rem;
     }
@@ -353,11 +355,9 @@ footer .section-number {
     .footer-header {
         text-align: left;
         font-size: 2.5rem;
-        max-width: 355px;
     }
 
     .footer-text {
-        max-width: 355px;
         font-size: 1.125rem;
         text-align: left;
     }
