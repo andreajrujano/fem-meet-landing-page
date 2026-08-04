@@ -179,7 +179,8 @@ header {
 }
 
 .features-images img {
-    height: 144px;
+    height: clamp(144px, 128.73px + 4.07vw, 160px);
+    aspect-ratio: 1 / 1;
     border-radius: 0.5rem;
     object-fit: cover;
 }
@@ -271,6 +272,11 @@ footer .section-number {
         grid-template-columns: repeat(4, 1fr);
         gap: 1.5rem;
     }
+
+    .features-images img {
+        height: clamp(160px, -128px + 37.5vw, 256px);
+    }
+
     .footer-content {
         background-image:
                 linear-gradient(rgb(77 150 168 / 0.9), rgb(77 150 168  / 0.9)),
@@ -319,10 +325,6 @@ footer .section-number {
 
     .features-images {
         grid-template-columns: repeat(4, 1fr);
-    }
-
-    .features-images img {
-        height: 256px;
     }
 
     .features-description {
