@@ -6,7 +6,6 @@ This is a solution to the [Meet landing page challenge on Frontend Mentor](https
 
 - [Overview](#overview)
     - [The challenge](#the-challenge)
-    - [Screenshot](#screenshot)
     - [Links](#links)
 - [My process](#my-process)
     - [Built with](#built-with)
@@ -14,8 +13,6 @@ This is a solution to the [Meet landing page challenge on Frontend Mentor](https
     - [Continued development](#continued-development)
     - [Useful resources](#useful-resources)
     - [AI Collaboration](#ai-collaboration)
-- [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
 
 ## Overview
@@ -81,19 +78,25 @@ Note: to achieve the circle, it was target the `span` element inside the element
 
 #### Hero images added using pseudo-elements
 
-Hero images were added using the pseudo-elements `::before` and `::after`, for the mobile and tablet version it was only needed the `::before`since the image is on top of the hero text.
+Hero images were added using the pseudo-elements `::before` and `::after`, for the mobile and tablet version it was only needed the `::before` since the image is on top of the hero text.
 
-Through media queries, it was replace the `::before` element with the left side image of the hero and the right side was added through `::after`.
+Through media queries, it was replaced the `::before` element with the left side image of the hero and the right side was added through `::after`.
 
 #### Flex items default behavior is `stretch`
 
-ffsdf
+This applied to the buttons in the hero, so it had to be changed into `align-items: center`. Also, the pseudo-element `hero::before` also inherits the flex display, so if the hero is centered via `align-items: center` instead of the default `stretch`, this pseudo-element that has no width it won't be visible in its width, but it will occupy its defined height.
+
+To center aligned the text in the hero, the best move was to align only the `hero-content` class using `align-self: center`.
+
+#### Feature images as list items
+
+The feature images are presented semantically as a list, but the styling is made via CSS as a grid. The two are independent, one for meaning and the other for presentation.
 
 #### Make the body to get the leftover space
 
-The `body` was turned into a flex container, within it has children: `header`, `main` and `footer`. They `body` is as tall as its content, so it end up having some leftover space _below_ the footer, when the footer should always sit at the bottom of the page.
+The `body` was turned into a flex container, within it has children: `header`, `main` and `footer`. The `body` is as tall as its content, so it ends up having some leftover space _below_ the footer, when the footer should always sit at the bottom of the page.
 
-To make the `main` element absorb all the leftover space, pushing the footer to the bottom, it was used the `flex-grow`property, which defaults value is 0. That is, all items grow the same, but by giving the value 1 to the `main` element, this elements grows more than the rest.
+To make the `main` element absorb all the leftover space, pushing the footer to the bottom, it was used the `flex-grow`property, which defaults value is 0. That is, all items don't grow at all, but by giving the value 1 to the `main` element, this elements grows more than the rest.
 
 ```css
 main {
@@ -101,7 +104,14 @@ main {
 }
 ```
 
+### Continued development
+
+Get more practice with background images, using pseudo-elements `::before` and `::after` to add achieve unexpected effects.
+
 ### Useful resources
 
 - [MDN docs](https://developer.mozilla.org/en-US/) - Used to search properties and their possible values
 
+### AI Collaboration
+
+AI acted as a mentor rather than a developer. I used it to review my own code, to get ideas on how to achieve parts of the page that I did not know how. Receive hints about what to implement.
